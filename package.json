@@ -1,0 +1,23 @@
+{
+  "name": "gw-portfolio-builder-ex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryan3023/gw-portfolio-builder-ex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryan3023/gw-portfolio-builder-ex/issues"
+  },
+  "homepage": "https://github.com/bryan3023/gw-portfolio-builder-ex#readme",
+  "dependencies": {
+    "inquirer": "^7.1.0"
+  }
+}
