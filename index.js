@@ -30,7 +30,7 @@ inquirer.prompt([
   )
   html += writeSection(
     "GitHub Profile",
-    writeLink(response.linkedin, "GitHub profile")
+    writeLink(response.github, "GitHub profile")
   )
   html += htmlFooter
 
