@@ -1,6 +1,6 @@
 const
   inquirer = require("inquirer"),
-  fs = require("fs");
+  fs = require("fs")
 
 inquirer.prompt([
   {
@@ -20,9 +20,10 @@ inquirer.prompt([
     name: "github"
   }
 ]).then(response => {
-  let html = htmlHeader.replace('{0}', `${response.name}'s portfolio`)
+  const title = `${response.name}'s Portfolio`
+  let html = htmlHeader.replace('{0}', title)
 
-  html += writeTitle(`${response.name}'s Portfolio`)
+  html += writeTitle(title)
   html += writeSection("Bio", response.bio)
   html += writeSection(
     "LinkedIn Profile",
@@ -34,7 +35,7 @@ inquirer.prompt([
   )
   html += htmlFooter
 
-  saveHtml(html);
+  saveHtml(html)
 })
 
 
@@ -81,7 +82,7 @@ function saveHtml(html) {
   const outFile = "portfolio.html"
   fs.writeFile(outFile, html, "utf8", (error) => {
     if (error) {
-      return console.log(error);
+      return console.log(error)
     }
     console.log(`File saved at: ${__dirname}/${outFile}`)
   })
